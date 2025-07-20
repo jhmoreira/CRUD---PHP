@@ -20,7 +20,7 @@
         <h2>Endereço</h2>
 
         <label>CEP:</label>
-        <input type = "text" id="cep" name ="cep">
+        <input type = "text" id="cep" name ="cep" onblur="pesquisacep(this.value);">
         <label>Rua:</label>
         <input type = "text" id="rua" name ="rua">
         <label>Bairro:</label>
@@ -33,5 +33,7 @@
             <input type= "submit" value = "Cadastrar">
 
         </form>
+
+        <script src = "js/api.js"></script>
     </body>
 </html>
