@@ -12,4 +12,8 @@ $estado = filter_input(INPUT_POST,"estado",FILTER_SANITIZE_STRING);
 $inserirUsuario = "INSERT INTO usuario (nome, email, cep, rua, bairro, cidade, estado) VALUES ('$nome', '$email', '$cep', '$rua', '$bairro', '$cidade', '$estado')";
 
 $cadastro = mysqli_query($conexao, $inserirUsuario);
+
+if(mysqli_insert_id($conexao)){
+    header("Location: listar.php");
+}
 ?>
