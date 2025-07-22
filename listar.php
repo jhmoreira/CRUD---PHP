@@ -1,3 +1,6 @@
+<?php
+include_once("conexao.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,6 +13,15 @@
 
         <?php
             $listagem = "SELECT * from usuario";
+            $listaDeCadastro = mysqli_query($conexao, $listagem);
+
+            while($cadastro=mysqli_fetch_assoc($listaDeCadastro)){
+
+                echo "Nome: ". $cadastro["nome"]. "<br>";
+                echo "E-mail: ". $cadastro["email"]. "<br>"."<hr>";
+                
+
+            }
             
         ?>
     </body>
