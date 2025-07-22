@@ -31,17 +31,17 @@ function pesquisacep(valor) {
             } //end if.
             else {
                 //cep é inválido.
-                limpa_formulário_cep();
+                limpa_formulario_cep();
                 alert("Formato de CEP inválido.");
             }
         } //end if.
         else {
             //cep sem valor, limpa formulário.
-            limpa_formulário_cep();
+            limpa_formulario_cep();
         }
     };
 
-    function limpa_formulário_cep() {
+    function limpa_formulario_cep() {
             //Limpa valores do formulário de cep.
             document.getElementById('rua').value=("");
             document.getElementById('bairro').value=("");
@@ -60,7 +60,7 @@ function pesquisacep(valor) {
         } //end if.
         else {
             //CEP não Encontrado.
-            limpa_formulário_cep();
+            limpa_formulario_cep();
             alert("CEP não encontrado.");
         }
     }
