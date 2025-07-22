@@ -18,7 +18,12 @@ include_once("conexao.php");
             while($cadastro=mysqli_fetch_assoc($listaDeCadastro)){
 
                 echo "Nome: ". $cadastro["nome"]. "<br>";
-                echo "E-mail: ". $cadastro["email"]. "<br>"."<hr>";
+                echo "E-mail: ". $cadastro["email"]. "<br>";
+                echo "CEP: : ". $cadastro["cep"]. "<br>";
+                echo "Rua: ". $cadastro["rua"]. "<br>";
+                echo "Bairro: ". $cadastro["bairro"]. "<br>";
+                echo "Cidade: ". $cadastro["cidade"]. "<br>";
+                echo "Estado: ". $cadastro["estado"]. "<br>". "<hr>";
                 
 
             }
