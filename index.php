@@ -7,7 +7,7 @@
 
     <body>
         <h1>CADASTRO DE USUÁRIO</h1>
-
+        <a href = 'listar.php'>Listar</a><br>
         <h2>Dados Pessoais</h2>
         <form action="cadastro.php" method= "POST">
             <label>Nome:</label>

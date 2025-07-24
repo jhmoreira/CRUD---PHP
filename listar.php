@@ -12,6 +12,7 @@ include_once("conexao.php");
         <h1>Listagem de cadastro</h1>
 
         <?php
+            echo "<a href = 'index.php'>Cadastrar</a><br><br>";
             $listagem = "SELECT * from usuario";
             $listaDeCadastro = mysqli_query($conexao, $listagem);
 
@@ -24,7 +25,8 @@ include_once("conexao.php");
                 echo "Bairro: ". $cadastro["bairro"]. "<br>";
                 echo "Cidade: ". $cadastro["cidade"]. "<br>";
                 echo "Estado: ". $cadastro["estado"]. "<br>";
-                echo "<a href = 'editar.php?id= ".$cadastro['id']."'> Editar</a><hr>";
+                echo "<a href = 'editar.php?id= ".$cadastro['id']."'> Editar</a>";
+                echo "<a href = 'deletar.php?id= ".$cadastro['id']."'> Deletar</a><hr>";
                 
 
             }
