@@ -16,6 +16,7 @@ $resposta = mysqli_fetch_assoc($usuario);
 
         <h2>Dados Pessoais</h2>
         <form action="editar_usuario.php" method= "POST">
+            <input type = "hidden" id="id" name ="id" value = "<?php echo $resposta['id'];?>">
             <label>Nome:</label>
             <input type = "text" id="nome" name ="nome" value = "<?php echo $resposta['nome'];?>">
 
