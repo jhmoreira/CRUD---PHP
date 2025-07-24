@@ -1,6 +1,7 @@
 <?php
 include_once("conexao.php");
-$consulta = "SELECT * FROM usuario WHERE id = '1' ";
+$id = filter_input(INPUT_GET, "id", FILTER_SANITIZE_NUMBER_INT);
+$consulta = "SELECT * FROM usuario WHERE id = '$id' ";
 $usuario = mysqli_query($conexao,$consulta);
 $resposta = mysqli_fetch_assoc($usuario);
 ?>

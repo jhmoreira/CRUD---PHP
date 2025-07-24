@@ -23,7 +23,8 @@ include_once("conexao.php");
                 echo "Rua: ". $cadastro["rua"]. "<br>";
                 echo "Bairro: ". $cadastro["bairro"]. "<br>";
                 echo "Cidade: ". $cadastro["cidade"]. "<br>";
-                echo "Estado: ". $cadastro["estado"]. "<br>". "<hr>";
+                echo "Estado: ". $cadastro["estado"]. "<br>";
+                echo "<a href = 'editar.php?id= ".$cadastro['id']."'> Editar</a><hr>";
                 
 
             }
