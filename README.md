@@ -7,6 +7,6 @@ Aplicação de **Cadastro de usuários e Endereço** desenvolvida em PHP
 - Armazenamento no MySQL
 
 ## Tecnologias
-**PHP**
-**MySQL**
-**JavaScript**
+- **PHP**
+- **MySQL**
+- **JavaScript**
